@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Perform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-left">
+      <a href="/" class="nav-logo">
+        <img src="https://framerusercontent.com/images/cdaAn72GBEIGezJT7rvyjC8LU.png" alt="Perform">
+        <span>Perform</span>
+      </a>
+      <div class="nav-separator"></div>
+      <div class="nav-links">
+        <a href="/#about">Sobre</a>
+        <a href="/#coaching">Coaching</a>
+        <a href="/#reviews">Depoimentos</a>
+        <a href="/contact#hero">Contato</a>
+      </div>
+    </div>
+    <div class="nav-right">
+      <a href="https://api.whatsapp.com/send/?phone=5581992666767&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0&utm_source=ig" class="btn-secondary" target="_blank">Agendamento</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="/#about" class="mobile-link">Sobre</a>
+  <a href="/#coaching" class="mobile-link">Coaching</a>
+  <a href="/#reviews" class="mobile-link">Depoimentos</a>
+  <a href="/contact#hero" class="mobile-link">Contato</a>
+  <a href="https://api.whatsapp.com/send/?phone=5581992666767&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0&utm_source=ig" class="btn-dark" target="_blank">
+    Agendamento
+    <span class="btn-icon">
+      <svg viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+  </a>
+</div>
+
+<!-- ===== CONTACT HERO ===== -->
+<section class="contact-hero" id="hero">
+  <div class="container">
+    <div class="contact-left">
+      <div class="contact-avatar">
+        <img src="media/dr-marcelo.png" alt="Dr. Marcelo Barradas">
+      </div>
+      <h1 class="contact-title">Entre em contato</h1>
+      <p class="contact-desc">Pronto para dar o próximo passo na sua saúde e performance? Entre em contato e vamos criar um protocolo personalizado para você.</p>
+      <div class="contact-divider"></div>
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>+55 (11) 99999-9999</span>
+        </div>
+        <div class="contact-info-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>contato@drmarcelobarradas.com.br</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form class="contact-form" onsubmit="event.preventDefault()">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" placeholder="Jane Smith">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="example@example.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Telefone (opcional)</label>
+            <input type="tel" placeholder="+123456789">
+          </div>
+          <div class="form-group">
+            <label>Plano de interesse (opcional)</label>
+            <select>
+              <option value="" disabled selected>Select...</option>
+              <option value="saude">Saúde</option>
+              <option value="performance">Performance</option>
+              <option value="estetica">Estética</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label>Mensagem</label>
+          <textarea placeholder="I need..." rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-form">
+          Enviar formulário
+          <span class="btn-icon">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="reviews">
+  <div class="testimonial-wrapper">
+    <div class="testimonial-inner fade-in">
+      <div class="testimonial-top">
+        <div class="testimonial-stars">
+          <svg viewBox="0 0 118 24" width="118" height="24"><path d="M 11.351 2.927 C 11.052 2.006 9.748 2.006 9.449 2.927 L 7.93 7.601 C 7.796 8.013 7.413 8.291 6.98 8.291 L 2.065 8.291 C 1.096 8.291 0.694 9.531 1.477 10.101 L 5.453 12.989 C 5.803 13.244 5.95 13.695 5.816 14.107 L 4.298 18.781 C 3.998 19.703 5.053 20.469 5.836 19.899 L 9.812 17.011 C 10.163 16.756 10.637 16.756 10.988 17.011 L 14.964 19.899 C 15.747 20.469 16.802 19.702 16.502 18.781 L 14.984 14.107 C 14.85 13.695 14.997 13.244 15.347 12.989 L 19.323 10.101 C 20.106 9.531 19.704 8.291 18.735 8.291 L 13.821 8.291 C 13.388 8.291 13.004 8.013 12.87 7.601 Z M 35.151 2.927 C 34.852 2.006 33.548 2.006 33.249 2.927 L 31.73 7.601 C 31.596 8.013 31.213 8.291 30.78 8.291 L 25.865 8.291 C 24.896 8.291 24.494 9.531 25.277 10.101 L 29.253 12.989 C 29.603 13.244 29.75 13.695 29.616 14.107 L 28.098 18.781 C 27.798 19.703 28.853 20.469 29.636 19.899 L 33.612 17.011 C 33.963 16.756 34.437 16.756 34.788 17.011 L 38.764 19.899 C 39.547 20.469 40.602 19.702 40.302 18.781 L 38.784 14.107 C 38.65 13.695 38.797 13.244 39.147 12.989 L 43.123 10.101 C 43.906 9.531 43.504 8.291 42.535 8.291 L 37.621 8.291 C 37.188 8.291 36.804 8.013 36.67 7.601 Z M 58.951 2.927 C 58.651 2.006 57.348 2.006 57.049 2.927 L 55.53 7.601 C 55.396 8.013 55.013 8.292 54.58 8.292 L 49.665 8.292 C 48.696 8.292 48.294 9.532 49.077 10.102 L 53.053 12.99 C 53.403 13.245 53.55 13.696 53.416 14.108 L 51.898 18.781 C 51.598 19.703 52.653 20.469 53.436 19.899 L 57.412 17.011 C 57.763 16.756 58.237 16.756 58.588 17.011 L 62.564 19.899 C 63.347 20.469 64.402 19.702 64.102 18.781 L 62.584 14.108 C 62.45 13.696 62.597 13.245 62.947 12.99 L 66.923 10.102 C 67.706 9.532 67.304 8.292 66.335 8.292 L 61.421 8.292 C 60.988 8.292 60.604 8.013 60.47 7.601 Z M 82.551 2.927 C 82.251 2.006 80.948 2.006 80.649 2.927 L 79.13 7.601 C 78.996 8.013 78.613 8.292 78.18 8.292 L 73.265 8.292 C 72.296 8.292 71.894 9.532 72.677 10.102 L 76.653 12.99 C 77.003 13.245 77.15 13.696 77.016 14.108 L 75.498 18.781 C 75.198 19.703 76.253 20.469 77.036 19.899 L 81.012 17.011 C 81.363 16.756 81.837 16.756 82.188 17.011 L 86.164 19.899 C 86.947 20.469 88.002 19.702 87.702 18.781 L 86.184 14.108 C 86.05 13.696 86.197 13.245 86.547 12.99 L 90.523 10.102 C 91.306 9.532 90.904 8.292 89.935 8.292 L 85.021 8.292 C 84.588 8.292 84.204 8.013 84.07 7.601 Z M 106.551 2.927 C 106.252 2.006 104.948 2.006 104.649 2.927 L 103.13 7.601 C 102.996 8.013 102.612 8.291 102.179 8.291 L 97.265 8.291 C 96.296 8.291 95.894 9.531 96.677 10.101 L 100.653 12.989 C 101.003 13.244 101.15 13.695 101.016 14.107 L 99.498 18.781 C 99.198 19.703 100.253 20.469 101.036 19.899 L 105.012 17.011 C 105.363 16.756 105.837 16.756 106.188 17.011 L 110.164 19.899 C 110.947 20.469 112.002 19.702 111.702 18.781 L 110.184 14.107 C 110.05 13.695 110.197 13.244 110.547 12.989 L 114.523 10.101 C 115.306 9.531 114.904 8.291 113.935 8.291 L 109.021 8.291 C 108.588 8.291 108.204 8.013 108.07 7.601 Z" fill="var(--gold)"/></svg>
+        </div>
+        <p class="testimonial-quote" id="testimonialQuote">Com o acompanhamento do Dr. Marcelo, consegui equilibrar meus hormônios e recuperar a energia que havia perdido. O protocolo foi totalmente personalizado e os resultados apareceram já nos primeiros meses.</p>
+        <p class="testimonial-author-text" id="testimonialAuthor">Renata Oliveira, Empresária</p>
+      </div>
+      <div class="testimonial-avatars">
+        <div class="testimonial-avatar active" data-index="0">
+          <img src="https://framerusercontent.com/images/CD3L3PqkdrNUHs06U58RQxOMo.png" alt="Renata Oliveira">
+        </div>
+        <div class="testimonial-avatar" data-index="1">
+          <img src="https://framerusercontent.com/images/jwidccx1HGr0Ikx3zmSAJdtBOU.png" alt="Carlos Mendes">
+        </div>
+        <div class="testimonial-avatar" data-index="2">
+          <img src="https://framerusercontent.com/images/aIX32saaQEM73IN2MQsuknbz4Fw.png" alt="Juliana Costa">
+        </div>
+        <div class="testimonial-avatar" data-index="3">
+          <img src="https://framerusercontent.com/images/x3RmbAAY64fTviZGAdyQxDzLTJI.png" alt="André Silva">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta">
+  <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content container fade-in">
+    <div class="cta-text">
+      <h2 class="h2">Pronto para Transformar sua Saúde?</h2>
+      <p class="paragraph" style="color: var(--white)">Vou te ajudar a alcançar o equilíbrio hormonal, a composição corporal ideal e a performance que você merece.</p>
+    </div>
+    <a href="/contact#hero" class="btn-primary">
+      Vamos Conversar
+      <span class="btn-icon">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="https://framerusercontent.com/images/cdaAn72GBEIGezJT7rvyjC8LU.png" alt="Perform">
+        <span>Perform</span>
+      </div>
+      <p class="footer-desc">Transforme sua saúde com protocolos médicos personalizados em endocrinologia, nutrologia, performance e estética, guiados por um especialista comprometido com seus resultados.</p>
+    </div>
+    <div class="footer-right">
+      <div class="footer-col">
+        <h4>Seções</h4>
+        <a href="/#about">Sobre</a>
+        <a href="/#coaching">Acompanhamento</a>
+        <a href="/#reviews">Depoimentos</a>
+        <a href="/contact#hero">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <a href="https://x.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
